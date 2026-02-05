@@ -1,0 +1,206 @@
+:root {
+  --bg: #000;
+  --card: #111;
+  --text: #e7e9ea;
+  --muted: #71767b;
+  --blue: #1d9bf0;
+  --border: #2f3336;
+  --font: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* AUTH SECTION */
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.auth-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  width: 100%;
+  max-width: 380px;
+  padding: 2.5rem;
+  border-radius: 16px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.auth-card h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* FLOATING LABELS */
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 12px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.input-group label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  font-size: 0.85rem;
+  pointer-events: none;
+  transition: 0.2s ease;
+  background: var(--card);
+  padding: 0 4px;
+}
+
+.input-group input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 1px var(--blue);
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -7px;
+  font-size: 0.7rem;
+  color: var(--blue);
+}
+
+/* BUTTON */
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: var(--blue);
+  border: none;
+  border-radius: 999px;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.auth-footer a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+/* TEAM SECTION */
+
+.team-section {
+  padding: 5rem 2rem;
+  background: #000;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.team-card {
+  background: var(--card);
+  border-radius: 16px;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* HOVER OVERLAY */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay a {
+  color: var(--text);
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.team-card h3 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.team-card p {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+}
