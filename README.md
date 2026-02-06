@@ -1,52 +1,27 @@
-# Brand Login & Profile Clone
+# X (Twitter) Sign-Up Page Clone
 
-A frontend UI project that recreates an **X (Twitter)-style authentication page** along with a responsive **Our Team** section using pure HTML and CSS.
-
----
-
-## 🎯 Objectives
-
-* Clone a real-world authentication UI with high visual accuracy
-* Practice HTML5 form validation and modern input styling
-* Build responsive layouts without any frameworks
-
----
+A high-fidelity clone of the X (Twitter) registration interface built using **pure HTML5 and CSS3**.  
+This project focuses on professional UI replication, responsive layouts, and advanced CSS interactions without using any frameworks.
 
 ## ✨ Features
-
-* Dark-themed auth page inspired by X
-* Centered, responsive signup form
-* Floating label inputs with focus states
-* HTML5 validation (`required`, `email`, `minlength`)
-* Responsive team grid with hover-based social overlay
-
----
+- Pixel-clean authentication page layout
+- HTML5 form validation (required, email, minlength)
+- Floating labels with focus glow effects
+- Neon gradient animated CTA button
+- Responsive, mobile-first design
+- Team section with hover social overlays
+- AI-generated inline avatars (no external images)
 
 ## 🛠️ Tech Stack
+- HTML5 (Semantic Markup)
+- CSS3 (Grid, Animations, Pseudo-classes)
 
-* HTML5
-* CSS3 (Flexbox, Grid, pseudo-classes)
-* Google Fonts (Inter)
+## 📱 Responsive Design
+Works seamlessly across desktop, tablet, and mobile screen sizes.
 
----
-
-## 📁 Structure
-
-```
-Brand-Login-Clone/
-├── index.html
-├── style.css
-└── README.md
-```
+## 🚀 Live Preview
+Deployed using GitHub Pages / Vercel.
 
 ---
 
-## 🚀 Run Instructions
-
-Open `index.html` using **Live Server** or any modern browser.
-
----
-
-## 📄 Note
-
-Built for learning and educational purposes.
+✅ Built as part of a UI engineering capstone to practice precision layout, form UX, and advanced CSS interactions.
